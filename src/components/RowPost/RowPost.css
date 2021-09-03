@@ -1,0 +1,26 @@
+.row{
+    margin-left:20px;
+    color:#fff;
+    padding: 20px;
+}
+.poster{
+    max-height:250px;
+    margin-right:10px ;
+    cursor:pointer;
+ }
+.poster:hover{
+    transform: scale(1.2);
+}
+.posters{
+    display:flex;
+    padding-left:10 20 10 20 px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.posters::-webkit-scrollbar{
+    display:none;
+}
+.fade{
+    height:7.4rem;
+    background-image: linear-gradient(180deg,rgba(37,37,37,0.61),#111);
+}
