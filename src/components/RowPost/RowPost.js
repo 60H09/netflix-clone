@@ -16,7 +16,7 @@ function RowPost(props) {
             <h2>{props.title}</h2>
             <div className="posters">
            { props.movies.filter(film=>{return film.id!==props.id}).map(function(film,index){
-                return(<div onclick={window.scrollTo(0, 0)}><img className="poster" key={index} index={index} id={film.id} src={props.genre ? imgURL+film.backdrop_path : imgURL+film.poster_path } alt="" onClick={handleClick} style={{width:props.genre ?'250px' : null}} /></div>)
+                return(<div onclick={window.scrollTo(0, 0)}><img className="poster" key={index} index={index} id={film.id} src={imgURL+film.poster_path } alt="" onClick={handleClick}  /></div>)
             })}
                       
             </div>
